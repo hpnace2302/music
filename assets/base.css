@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #000;
+    --primary-color2: #101010;
+    --primary-color3: #121212;
+    --primary-color4: #181818;
+    --text-color: #fff;
+    --text-color2: #b3b3b3;
+    --bg-light: #fff;
+    --nav-width: 24rem;
+    --nav-content-height: 6rem;
+    --nav-footer-height: 9rem;
+}
+
+@keyframes growth {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.ml0 {
+    margin-left: 0;
+}
+.mr0 {
+    margin-right: 0;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/style.css">
+<!-- Please copy styles from <style></style> to your file styles -->
+    <!-- reset css -->
+    <style>
+      html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {  display: block;}body {  line-height: 1;}ol, ul {  list-style: none;}blockquote, q {  quotes: none;}blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none;}table {  border-collapse: collapse;  border-spacing: 0;}
+    </style>
+    <!-- base style -->
+    <style>
+      *,*:before,*:after {box-sizing: border-box; margin: 0;border: 0;padding: 0;}/* using rem unit */html {  font-size: 62.5%;}a {  text-decoration: none;} li {list-style: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Lato', sans-serif;  font-size: 16px;  line-height: 1;}input,
+      button,textarea,select {  outline: none;  font-family: 'Lato', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav">
+        <div class="nav__logo">
+          <div class="nav__logo--icon"><i class="fas fa-headphones"></i></div>
+          <div class="nav__logo--name">Đăng Phong</div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <i class="fas fa-home"></i>
+            <p class="nav__item--name">Trang chủ</p>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-search"></i>
+            <p class="nav__item--name">Tìm kiếm</p>
+          </li>
+          <li class="nav__item">
+            <i class="">||\</i>
+            <p class="nav__item--name">Thư viện</p>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-plus"></i>
+            <p class="nav__item--name">Tạo playlist</p>
+          </li>
+          <li class="nav__item">
+            <i class="far fa-heart"></i>
+            <p class="nav__item--name">Bài hát yêu thích</p>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content__nav">
+          <div class="content__nav--control">
+            <i class="fas fa-arrow-circle-left"></i>
+            <i class="fas fa-arrow-circle-right"></i>
+          </div>
+          <div class="content__nav--accout">
+            <div class="content__nav--accout-register">Đăng Ký</div>
+            <div class="content__nav--accout-login">Đăng Nhập</div>
+          </div>
+        </div>
+        <div class="music">
+          <div class="content__container">
+            <div class="container__heading">
+              <div class="container__heading-left">Lựa chọn của bạn</div>
+              <div class="container__heading-right">Xem tất cả</div>
+            </div>
+            <div class="container__music">
+              <div class="row no-gutters">
+                <div class="container__music--list">
+                    <!-- <div class="container__music--item">
+                      <img src="./assets/img/songimage/song1.jpg" alt="" class="container__music-img">
+                      <div class="container__music--detail">
+                        <div class="container__music--heading">
+                          Hot Hít VietNam
+                        </div>
+                        <div class="container__music--desc">
+                          Anh sẽ chờ em
+                          Dù biển xanh kia có cạn khô
+                          Dù qua thêm bao kiếp
+                          Anh vẫn sẽ chờ
+                        </div>
+                      </div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="player">
+          <!-- CD -->
+          <div class="music__detail">
+            <div class="cd">
+              <div class="cd-thumb" style="background-image: url('./assets/img/songimage/song1.jpg')">
+              </div>
+            </div>
+            <!-- Dashboard -->
+            <div class="dashboard">
+              <!-- Header -->
+              <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+                <h3>Ca sĩ</h3>
+              </header>
+            </div>
+          </div>
+        
+            <!-- Control -->
+            <div class="control">
+              <div class="btn btn-repeat">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="btn btn-prev">
+                <i class="fas fa-step-backward"></i>
+              </div>
+              <div class="btn btn-toggle-play">
+                <i class="fas fa-pause icon-pause"></i>
+                <i class="fas fa-play icon-play"></i>
+              </div>
+              <div class="btn btn-next">
+                <i class="fas fa-step-forward"></i>
+              </div>
+              <div class="btn btn-random">
+                <i class="fas fa-random"></i>
+              </div>
+            </div>
+        
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+        
+            <audio id="audio" src=""></audio>
+        
+          <!-- Playlist -->
+          <!-- <div class="playlist"> -->
+            <!-- <div class="song">
+              <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+              </div>
+              <div class="body">
+                <h3 class="title">Music name</h3>
+                <p class="author">Singer</p>
+              </div>
+              <div class="option">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="song">
+              <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+              </div>
+              <div class="body">
+                <h3 class="title">Music name</h3>
+                <p class="author">Singer</p>
+              </div>
+              <div class="option">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="song">
+              <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+              </div>
+              <div class="body">
+                <h3 class="title">Music name</h3>
+                <p class="author">Singer</p>
+              </div>
+              <div class="option">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src='./music.js'></script>
+  </body>
+</html>
+

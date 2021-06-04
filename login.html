@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/login-register.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
+<!-- Please copy styles from <style></style> to your file styles -->
+    <!-- reset css -->
+    <style>
+      html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {  display: block;}body {  line-height: 1;}ol, ul {  list-style: none;}blockquote, q {  quotes: none;}blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none;}table {  border-collapse: collapse;  border-spacing: 0;}
+    </style>
+    <!-- base style -->
+    <style>
+      *,*:before,*:after {box-sizing: border-box; margin: 0;border: 0;padding: 0;}/* using rem unit */html {  font-size: 62.5%;}a {  text-decoration: none;} li {list-style: none;}img {  display: block;  max-width: 100%;}body {  font-family: 'Lato', sans-serif;  font-size: 16px;  line-height: 1;}input,
+      button,textarea,select {  outline: none;  font-family: 'Lato', sans-serif;  font-size: 16px;  line-height: 1;}input {  line-height: normal;}button {  cursor: pointer;}
+    </style>
+  </head>
+  <body>
+      <div class="logo">
+        <div class="logo--icon"><i class="fas fa-headphones"></i></div>
+        <div class="logo--name">Đăng Phong</div>
+      </div>
+      <div class="container">
+            <div class="login__social">
+                <div class="login__social--heading">Để tiếp tục, hãy đăng nhập vào Đăng Phong</div>
+                <ul class="login__list">
+                    <li class="login__item">
+                        <a href="#" class="login__item--link">
+                            <div class="login__item-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="login__item--name ">
+                                Tiếp tục với FaceBook
+                            </div>
+                        </a>
+                    </li>
+                    <li class="login__item">
+                        <a href="#" class="login__item--link">
+                            <div class="login__item-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="login__item--name">
+                                Tiếp tục với Apple
+                            </div>
+                        </a>
+                    </li>
+                    <li class="login__item">
+                        <a href="#" class="login__item--link">
+                            <div class="login__item-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="login__item--name">
+                                Tiếp tục với Google
+                            </div>
+                        </a>
+                    </li>
+                    <li class="login__item">
+                        <a href="#" class="login__item--link">
+                            <div class="login__item--name">
+                                Tiếp tục với số điện thoại
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login__input">
+                <div class="login__heading">Địa chỉ email hoặc tên người dùng</div>
+                <input type="text" class="login__input--user" placeholder="Dịa chỉ email hoặc tên người dùng">
+                <div class="login__heading">Mật khẩu</div>
+                <input type="password" class="login__input--pw" placeholder="Mật khẩu">
+                <div class="login__forgot--pw">Quên mật khẩu của bạn</div>
+                <div class="login__confirm">
+                    <input type="checked" class="login__checked">Hãy nhớ tôi
+                    <div class="login__confirm--login">Đăng Nhập</div>
+                </div>
+            </div>
+      </div>
+  </body>
+</html>
+
