@@ -9,6 +9,8 @@
     --nav-width: 24rem;
     --nav-content-height: 6rem;
     --nav-footer-height: 9rem;
+    --green-color1: #15883e;
+    --green-color2: #4bdf80;
 }
 
 @keyframes growth {
@@ -25,4 +27,12 @@
 }
 .mr0 {
     margin-right: 0;
+}
+.input__format {
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.4rem;
+    border: 1px solid var(--text-color2);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
 }

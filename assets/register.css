@@ -1,0 +1,227 @@
+@import './base.css';
+
+.container {
+    width: 45rem;
+    margin: 0 auto;
+    /* background-color: rgb(211, 40, 40); */
+    /* display: none; */
+}
+.logo {
+    display: flex;
+    height:10rem;
+    justify-content: center;
+}
+.logo--icon {
+    line-height:10rem;
+    font-size:5rem;
+    margin-right: 1rem;
+}
+.logo--name {
+    line-height:10rem;
+    font-size:3rem;
+    font-weight: 700;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-size:2.6rem;
+    font-weight: 700;
+}
+
+.register__fb {
+    width: 30rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:#1877F2;
+    color: var(--text-color);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.register__terms {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.register__terms a {
+    text-decoration: underline;
+    color: var(--green-color1);
+}
+
+.or {
+    width: 100%;
+    border-top: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    text-align: center;
+    position: relative;
+}
+.or__title {
+    background-color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Css input */
+
+.register__input--item.invalid .form-message {
+    color: #f33a58;
+}
+
+.register__input--item.invalid .input__format {
+    border-color: #f33a58;
+  }
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.register__heading {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.register__numberphone {
+    text-decoration: underline;
+    color: var(--green-color1);
+    font-size:1.4rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.desc {
+    font-size:1.4rem;
+    margin-top: 0.5rem;
+}
+.dob {
+    display: flex;
+    justify-content:space-between;
+}
+.dob__item {
+    max-width: 30%;
+}
+.gender {
+    display: flex;
+    justify-content:space-between;
+}
+.gender__item {
+    display: flex;
+    height: 4rem;
+    line-height:4rem;
+}
+.gender__item > div {
+    margin-left: 1rem;
+}
+.confirm__register {
+    align-items:center;
+    width: 100%;
+}
+.register__btn {
+    margin: 2rem auto;
+    text-align: center;
+    height: 5.8rem;
+    width: 15.8rem;
+    background-color: var(--green-color1);
+    color: var(--text-color);
+    font-size: 2rem;
+    border-radius: 3rem;
+    line-height:5.8rem;  
+    cursor: pointer;
+    display: block;
+}
+.register__btn:hover {
+    background-color: var(--green-color2);
+}
+.register__swap--login {
+    text-align: center;
+    display: flex;
+    height: 2rem;
+    justify-content:center;
+}
+.register__swap--login > a, .register__swap--login > div {
+    line-height:3rem;
+    height:3rem;
+}
+.register__swap--login > a {
+    text-decoration: underline;
+    color: var(--green-color1);
+    margin-left: 0.5rem;
+}
+
+.container2 {
+    width: 45rem;
+    margin: 0 auto;
+    /* background-color: rgb(211, 40, 40); */
+    display: none;
+    /* display: block; */
+}
+
+.register__input--phone {
+    display: flex;
+    width: 100%;
+}
+.numberphone {
+    margin-left: 1rem;
+    width: 70%;
+}
+.register__width--numberphone__control {
+    display: flex;
+}
+.prev {
+    /* width: 100%; */
+    text-decoration: underline;
+    color: var(--green-color1);
+    background-color: var(--text-color);
+    margin-right: 10rem;
+
+    /* margin-top: 2rem; */
+}
+
+/* .login__forgot--pw {
+    margin-top: 1rem;
+}
+.login__confirm {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top:1rem;
+    height: 4rem;
+}
+.login__confirm--checkbox {
+    height: 4rem;
+    display: flex;
+    line-height: 4rem;
+}
+.login__confirm--checkbox > input {
+    margin-right: 1rem;
+}
+.login__checked {
+    height:4rem;
+    line-height: 4rem;
+    width: 1.8rem;
+    cursor: pointer;
+}
+.login__checked:checked {
+    background-color:var(--green-color1);
+    border-color:var(--green-color1);
+}
+.login__confirm--login {
+    height: 4rem;
+    padding: 0 5rem;
+    border: 1px solid var(--text-color2);
+    color: var(--text-color);
+    line-height:4rem;
+    cursor: pointer;
+    background-color:var(--green-color1);
+    border-radius: 2rem;
+}
+
+.login__confirm--login:hover {
+    background-color:var(--green-color2);
+} */

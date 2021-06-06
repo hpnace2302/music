@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/base.css">
-    <link rel="stylesheet" href="./assets/login-register.css">
+    <link rel="stylesheet" href="./assets/login.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
 <!-- Please copy styles from <style></style> to your file styles -->
     <!-- reset css -->
@@ -77,18 +77,66 @@
                     </li>
                 </ul>
             </div>
-            <div class="login__input">
-                <div class="login__heading">Địa chỉ email hoặc tên người dùng</div>
-                <input type="text" class="login__input--user" placeholder="Dịa chỉ email hoặc tên người dùng">
+            <div class="or">
+                <strong class="or__title">hoặc</strong>
+            </div>
+            <div class="login__input" id="form-2">
+                <div class="register__input--item">
+                    <div for="email" class="register__heading">Email của bạn là gì?</div>
+                    <input id="email" name="email" type="text" class="input__format" placeholder="Nhập email của bạn.">
+                    <span class="form-message"></span>
+                    <!-- <a href="" class="register__numberphone">Dùng số điện thoại.</a> -->
+                </div>
+                <div class="register__input--item">
+                    <div for="password_confirmation" class="register__heading">Nhập mật khẩu của bạn</div>
+                    <input id="password_confirmation" name="password_confirmation" type="password" class="input__format" placeholder="Tạo mật khẩu.">
+                    <span class="form-message"></span>
+                </div>
+                <!-- <div class="login__heading">Địa chỉ email hoặc tên người dùng</div>
+                <input type="text" class="input__format login__input--user" placeholder="Địa chỉ email hoặc tên người dùng">
                 <div class="login__heading">Mật khẩu</div>
-                <input type="password" class="login__input--pw" placeholder="Mật khẩu">
-                <div class="login__forgot--pw">Quên mật khẩu của bạn</div>
+                <input type="password" class="input__format login__input--pw" placeholder="Mật khẩu"> -->
+                <a href="" class="login__forgot--pw">Quên mật khẩu của bạn</a>
                 <div class="login__confirm">
-                    <input type="checked" class="login__checked">Hãy nhớ tôi
+                    <div class="login__confirm--checkbox">
+                        <input type="checkbox" class="login__checked">Hãy nhớ tôi
+                    </div>
                     <div class="login__confirm--login">Đăng Nhập</div>
                 </div>
             </div>
+            <div class="login__footer">
+                <div class="login__footer--title">Bạn chưa có tài khoản?</div>
+                <a href='./register.html' class="login__footer--register">Đăng ký</a>
+            </div>
       </div>
+
+      <script src='./login-register.js'></script>
+      <script>
+
+        // Mong muốn của chúng ta
+        Validator({
+            form: '#form-2',
+            formGroupSelector: '.register__input--item',
+            errorSelector: '.form-message',
+            rules: [
+                // Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                // Validator.minLength('#password',6),
+                // Validator.isConfirmed('#password_confirmation', function() { 
+                //     return document.querySelector('#form-1 #password').value
+                //   }, 'Mật khẩu nhập lại không chính xác'),
+                Validator.isRequired('#password_confirmation'),
+                // Validator.isRequired('input[name="gender"]'),
+                // Validator.isRequired('#province'),
+                // Validator.isRequired('#avatar'),
+            ],
+            onSubmit: function(data) {
+                // call API
+                console.log(data)
+            }
+        })
+    </script>
   </body>
 </html>
 

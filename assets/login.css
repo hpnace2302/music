@@ -1,0 +1,216 @@
+@import './base.css';
+.container {
+    width: 45rem;
+    margin: 0 auto;
+    /* background-color: rgb(211, 40, 40); */
+}
+.logo {
+    display: flex;
+    height:10rem;
+    justify-content: center;
+    border-bottom: 1px solid #d9dadc;
+}
+.logo--icon {
+    line-height:10rem;
+    font-size:5rem;
+    margin-right: 1rem;
+}
+.logo--name {
+    line-height:10rem;
+    font-size:3rem;
+    font-weight: 700;
+}
+.login__social {
+    width: 100%;
+    text-align: center;
+    margin: 3.5rem 0;
+}
+.login__social--heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.login__list {
+
+}
+.login__item {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    border:2px solid #616467;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.login__item:nth-child(1) {
+    background-color: #3a61b3;
+}
+.login__item:nth-child(1):hover {
+    background-color: #3a60b3ad;
+}
+.login__item:nth-child(1) .login__item-icon i ,
+.login__item:nth-child(1) .login__item--name {
+    color: var(--text-color);
+}
+.login__item:nth-child(2) {
+    background-color: #000;
+}
+.login__item:nth-child(2):hover {
+    background-color: #333;
+}
+.login__item:nth-child(3):hover,
+.login__item:nth-child(4):hover {
+    background-color: #616467;
+} 
+
+.login__item:nth-child(2) .login__item-icon i ,
+.login__item:nth-child(2) .login__item--name {
+    color: var(--text-color);
+}
+.login__item:nth-child(3) .login__item-icon i ,
+.login__item:nth-child(3) .login__item--name,
+.login__item:nth-child(4) .login__item-icon i ,
+.login__item:nth-child(4) .login__item--name {
+    color: #616467;
+}
+.login__item:nth-child(3):hover .login__item-icon i ,
+.login__item:nth-child(3):hover .login__item--name,
+.login__item:nth-child(4):hover .login__item--name {
+    color: #fff;
+}
+.login__item--link {
+    display: flex;
+}
+.login__item-icon > i {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.login__item--name {
+    font-size: 2rem;    
+}
+.or {
+    border-top: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    text-align: center;
+    position: relative;
+}
+.or__title {
+    background-color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.login__input {
+    border-bottom: 1px solid #d9dadc;
+    padding-bottom: 2rem;
+}
+.login__input > input {
+    /* width: 100%;
+    height: 4rem;
+    padding: 0 1.4rem;
+    border: 1px solid var(--text-color2);
+    margin-top:1rem; */
+}
+.login__heading {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.login__input-user {
+
+}
+.login__input-pw {
+
+}
+.login__forgot--pw {
+    margin-top: 1rem;
+}
+.login__forgot--pw {
+    color: var(--green-color1);
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+.login__confirm {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top:1rem;
+    height: 4rem;
+}
+.login__confirm--checkbox {
+    height: 4rem;
+    display: flex;
+    line-height: 4rem;
+}
+.login__confirm--checkbox > input {
+    margin-right: 1rem;
+}
+.login__checked {
+    height:4rem;
+    line-height: 4rem;
+    width: 1.8rem;
+    cursor: pointer;
+}
+.login__checked:checked {
+    background-color:var(--green-color1);
+    border-color:var(--green-color1);
+}
+.login__confirm--login {
+    height: 4rem;
+    padding: 0 5rem;
+    border: 1px solid var(--text-color2);
+    color: var(--text-color);
+    line-height:4rem;
+    cursor: pointer;
+    background-color:var(--green-color1);
+    border-radius: 2rem;
+}
+
+.login__confirm--login:hover {
+    background-color:var(--green-color2);
+}
+.login__footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+.login__footer--title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.login__footer--register {
+    width: 100%;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 3rem;
+    border:2px solid #616467;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #616467;
+    cursor: pointer;
+}
+.login__footer--register:hover {
+    color: #fff;
+    background-color: #616467;
+}
+
+.register__input--item.invalid .form-message {
+    color: #f33a58;
+}
+
+.register__input--item.invalid .input__format {
+    border-color: #f33a58;
+  }
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
