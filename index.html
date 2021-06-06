@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Music</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -34,29 +34,24 @@
     <div class="wrapper">
       <div class="nav">
         <div class="nav__logo">
-          <div class="nav__logo--icon"><i class="fas fa-headphones"></i></div>
-          <div class="nav__logo--name">Đăng Phong</div>
+          <div class="nav__logo--icon"><i class="fab fa-spotify"></i></i></div>
+          <div class="nav__logo--name">Music</div>
         </div>
         <ul class="nav__list">
           <li class="nav__item">
-            <i class="fas fa-home"></i>
-            <p class="nav__item--name">Trang chủ</p>
+            <p class="nav__item--name active"><i class="fas fa-home"></i>Trang chủ</p>
           </li>
           <li class="nav__item">
-            <i class="fas fa-search"></i>
-            <p class="nav__item--name">Tìm kiếm</p>
+            <p class="nav__item--name"><i class="fas fa-search"></i>Tìm kiếm</p>
           </li>
           <li class="nav__item">
-            <i class="">||\</i>
-            <p class="nav__item--name">Thư viện</p>
+            <p class="nav__item--name"><i class="far fa-chart-bar"></i>Thư viện</p>
           </li>
           <li class="nav__item">
-            <i class="fas fa-plus"></i>
-            <p class="nav__item--name">Tạo playlist</p>
+            <p class="nav__item--name"><i class="fas fa-plus"></i>Tạo playlist</p>
           </li>
           <li class="nav__item">
-            <i class="far fa-heart"></i>
-            <p class="nav__item--name">Bài hát yêu thích</p>
+            <p class="nav__item--name"><i class="far fa-heart"></i>Bài hát yêu thích</p>
           </li>
         </ul>
       </div>
@@ -65,6 +60,11 @@
           <div class="content__nav--control">
             <i class="fas fa-arrow-circle-left"></i>
             <i class="fas fa-arrow-circle-right"></i>
+          </div>
+          <div class="content__nav--search">
+            <i class="content__nav--search__icon fas fa-search"></i>
+            <input type="text" class="content__nav--search__input" placeholder='Nghệ sĩ hoặc bài hát'>
+            <i style="margin-left: 20rem ;" class="content__nav--search__icon fas fa-times"></i>
           </div>
           <div class="content__nav--accout">
             <a href="./register.html" class="content__nav--accout-register">Đăng Ký</a>
@@ -181,6 +181,7 @@
       </div>
     </div>
 
+    <script src='./main.js'></script>
     <script src='./music.js'></script>
   </body>
 </html>
