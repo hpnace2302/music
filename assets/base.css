@@ -3,6 +3,8 @@
     --primary-color2: #101010;
     --primary-color3: #121212;
     --primary-color4: #181818;
+    --primary-color5: #333;
+    --primary-color6: #373737;
     --text-color: #fff;
     --text-color2: #b3b3b3;
     --bg-light: #fff;
@@ -21,6 +23,17 @@
         transform: scale(1.1);
     }
 }
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        background-color: var(--primary-color4);
+    }
+    to{
+        opacity: 1;
+        /* background-image: linear-gradient(0 , var(--primary-color5), var(--primary-color6)); */
+        background-color: var(--primary-color6);
+    }
+}
 
 .ml0 {
     margin-left: 0;
@@ -36,3 +49,12 @@
     margin-top: 1rem;
     border-radius: 0.5rem;
 }
+
+/* @keyframes song{
+    form {
+
+    }
+    to {
+        background-image: linear-gradient(0 , var(--primary-color5), var(--primary-color6));
+    }
+} */

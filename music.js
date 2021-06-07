@@ -3,7 +3,7 @@ const $$ = document.querySelectorAll.bind(document);
 
 const PLAYER_STORAGE_KEY = 'MP3'
 
-const player = $('.player');
+const player = $('.player')
 const heading = $('header h2')
 const singer = $('header h3')
 const cdThumb = $('.cd-thumb')
@@ -122,16 +122,16 @@ const app = {
     },
     handleEvents: function() {
         const _this = this
-        // const cdWidth = cd.offsetWidth
+        const cdWidth = cd.offsetWidth
         
         // Xử lý cd quay và dừng
-        // const cdThumbAnimate = cdThumb.animate([
-        //     {transform: 'rotate(360deg'}
-        // ], {
-        //     duration: 10000, // 10 giây
-        //     iterations: Infinity
-        // })
-        // cdThumbAnimate.pause()
+        const cdThumbAnimate = cd.animate([
+            {transform: 'rotate(360deg'}
+        ], {
+            duration: 10000, // 10 giây
+            iterations: Infinity
+        })
+        cdThumbAnimate.pause()
 
 
         // Xử lý phóng to thu nhỏ cd
@@ -156,14 +156,14 @@ const app = {
         audio.onplay = function() {
             _this.isPlaying = true
             player.classList.add('playing')
-            // cdThumbAnimate.play()
+            cdThumbAnimate.play()
         }
 
         // Khi song bị pause
         audio.onpause = function() {
             _this.isPlaying = false
             player.classList.remove('playing')
-            // cdThumbAnimate.pause()
+            cdThumbAnimate.pause()
         }
 
         // Khi tiến độ bài hát thay đổi
