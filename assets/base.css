@@ -17,21 +17,21 @@
 
 @keyframes growth {
     from {
-        transform: scale(1);
+        transform: scale(0.9);
     }
     to {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
 @keyframes FadeIn{
     from{
         opacity: 0;
-        background-color: var(--primary-color4);
+        /* background-color: var(--primary-color4); */
     }
     to{
         opacity: 1;
         /* background-image: linear-gradient(0 , var(--primary-color5), var(--primary-color6)); */
-        background-color: var(--primary-color6);
+        /* background-color: var(--primary-color6); */
     }
 }
 

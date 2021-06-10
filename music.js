@@ -87,8 +87,21 @@ const app = {
         path: "./assets/img/songs/song10.mp3",
         image:
             "./assets/img/songimage/song10.jpg"
-        }
-    
+        },
+        {
+            name: "Chúng Ta Của Hiện Tại",
+            singer: "Sơn Tùng MTP",
+            path: "./assets/img/songs/song11.mp3",
+            image:
+                "./assets/img/songimage/song11.jpg"
+        },
+        {
+            name: "Muộn Rồi Mà Sao Còn",
+            singer: "Sơn Tùng MTP",
+            path: "./assets/img/songs/song12.mp3",
+            image:
+                "./assets/img/songimage/song12.jpg"
+        },
     ],
     setConfig: function(key, value) {
         this.config[key] = value;

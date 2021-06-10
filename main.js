@@ -22,3 +22,20 @@ function close() {
     document.querySelectorAll('.nav__item--name')[0].classList.add('active')
     document.querySelectorAll('.nav__item--name')[1].classList.remove('active')
 }
+
+// document.querySelector('.content__nav--accout-login').onmouseover = function() {myFunction1()};
+// function myFunction1() {
+// document.querySelector(".content__nav--accout-login").classList.add('enlarged')
+// }
+// document.querySelector('.content__nav--accout-login').onmouseout = function() {myFunction2()};
+// function myFunction2() {
+// document.querySelector(".content__nav--accout-login").classList.remove('enlarged')
+// }
+// document.querySelector('.content__nav--accout-register').onmouseover = function() {myFunction1()};
+// function myFunction3() {
+// document.querySelector(".content__nav--accout-register").classList.add('enlarged')
+// }
+// document.querySelector('.content__nav--accout-register').onmouseout = function() {myFunction2()};
+// function myFunction4() {
+// document.querySelector(".content__nav--accout-register").classList.remove('enlarged')
+// }
