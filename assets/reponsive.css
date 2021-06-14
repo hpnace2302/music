@@ -63,7 +63,7 @@
         line-height: var(--nav-content-height);
     }
     .container__music--list {
-        padding-bottom: 7rem;
+        padding-bottom: 15rem;
     }
     .navbar {
         /* display: block; */
@@ -79,7 +79,10 @@
     .navbar__close--btn {
         color: var(--text-color2);
         font-size: 3rem;
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
     }
     .navbar__item {
         font-size: 3rem;
@@ -94,6 +97,12 @@
     }
     .navbar__mobile--search {
         /* display: block; */
+    }
+    .player {
+        /* display: none; */
+    }
+    .music {
+        padding-bottom: 0;
     }
 }
 

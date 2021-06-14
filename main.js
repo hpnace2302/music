@@ -1,3 +1,6 @@
+// let $ = document.querySelector.bind(document);
+// let $$ = document.querySelectorAll.bind(document);
+
 document.querySelectorAll('.nav__item')[0].onclick = function() {home()}
 function home() {
     document.querySelector('.content__nav--search').style.display = 'none';
@@ -23,19 +26,27 @@ function close() {
     document.querySelectorAll('.nav__item--name')[1].classList.remove('active')
 }
 
-// document.querySelector('.content__nav--accout-login').onmouseover = function() {myFunction1()};
-// function myFunction1() {
-// document.querySelector(".content__nav--accout-login").classList.add('enlarged')
-// }
-// document.querySelector('.content__nav--accout-login').onmouseout = function() {myFunction2()};
-// function myFunction2() {
-// document.querySelector(".content__nav--accout-login").classList.remove('enlarged')
-// }
-// document.querySelector('.content__nav--accout-register').onmouseover = function() {myFunction1()};
-// function myFunction3() {
-// document.querySelector(".content__nav--accout-register").classList.add('enlarged')
-// }
-// document.querySelector('.content__nav--accout-register').onmouseout = function() {myFunction2()};
-// function myFunction4() {
-// document.querySelector(".content__nav--accout-register").classList.remove('enlarged')
+document.querySelector('.content__nav--mobile__search').onclick = function() {searchMobile()}
+function searchMobile() {
+    document.querySelector('.navbar__mobile--search').style.display = 'block';
+}
+document.querySelector('.navbar__mobile--search__header--btn1').onclick = function() {closeMobileSearch()}
+function closeMobileSearch() {
+    document.querySelector('.navbar__mobile--search').style.display = 'none';
+}
+document.querySelector('.navbar__mobile--search__header--btn2').onclick = function() {closeMobileSearch2()}
+function closeMobileSearch2() {
+    document.querySelector('.navbar__mobile--search').style.display = 'none';
+}
+document.querySelector('.content__nav--mobile__bar').onclick = function() {mobileNavbar()}
+function mobileNavbar() {
+    document.querySelector('.navbar').style.display = 'block';
+}
+document.querySelector('.navbar__close--btn').onclick = function() {closeMobileNavbar()}
+function closeMobileNavbar() {
+    document.querySelector('.navbar').style.display = 'none';
+}
+// document.querySelector('.song').onclick = function() {song()}
+// function song() {
+//     document.querySelector('.player').style.display = 'block';
 // }

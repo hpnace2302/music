@@ -168,10 +168,10 @@
 }
 .music {
   margin: var(--nav-content-height) 0 calc(var(--nav-footer-height) - 5px);
+  margin-bottom: 0;
   background-color: var(--primary-color3);
-  /* height: 100rem; */
   width: 100%;
-  /* position: relative; */
+  padding-bottom: 9rem;
 }
 .content__container {
   width: 100%;
@@ -406,6 +406,9 @@ header h2 {
 .navbar {
   display: none;
 }
+.navbar__list {
+  margin-top: 3rem;
+}
 .navbar__mobile--search {
   display: none;
   position: fixed;
@@ -421,21 +424,40 @@ header h2 {
     background-color: var(--text-color2);
     display: flex;
 }
-.navbar__mobile--search__header--btn {
+.navbar__mobile--search__header--btn1 {
+  padding: 0 2rem;
+  font-size: 2rem;
+  line-height: var(--nav-content-height);
+  color: var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 1;
+  z-index: 1;
+}
+.navbar__mobile--search__header--btn2 {
     padding: 0 2rem;
     font-size: 2rem;
     line-height: var(--nav-content-height);
     color: var(--text-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 .navbar__mobile--search__header--input {
-    width: 80%;
+    width: 60%;
     line-height: var(--nav-content-height);
     background-color: var(--text-color2);
     color: var(--text-color);
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0rem; */
+    left: 5rem;
     border-radius: 0.3rem;
     font-size: 2rem;
-    padding: 2rem;
+    padding: 0 2rem;
+    position: absolute;
+    /* right: 3rem;
+    left: 3rem;
+    top: -2rem; */
 }
 .navbar__mobile--search__content {
     color: var(--text-color);
