@@ -111,7 +111,7 @@ const app = {
     render: function() {
         const htmls = this.songs.map((song, index) => {
             return `
-            <div class="song ${index === this.currentIndex ? 'active' : ''}" data-index="${index}">
+            <div class="song l-2 ${index === this.currentIndex ? 'active' : ''}" data-index="${index}">
                 <img src="${song.image}" alt="" class="container__music-img">
                 <div class="container__music--detail">
                     <div class="container__music--heading">

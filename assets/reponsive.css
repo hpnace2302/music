@@ -1,0 +1,125 @@
+/* Mobile & Tablet */
+@media (max-width : 1023px) {
+    .content__nav--control,
+    .content__nav--accout,
+    .nav {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        /* position: fixed; */
+        /* margin: 0 auto; */
+    }
+    .music {
+        /* position: fixed; */
+        width: 100%;
+    }
+    .content__nav {
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .player {
+        height: var(--nav-footer-mobile-height);
+        flex-wrap: wrap;
+    }
+    .music__detail {
+        /* width: 100%; */
+    }
+    .control1 {
+        margin-left: 0;
+    }
+    .control2 {
+        /* padding-bottom: 2rem; */
+    }
+    .control {
+        width: 100%;
+        margin-left: -1rem;
+    }
+    .progress {
+        width: 150%;
+        margin-left: -7rem;
+    }
+    .dashboard {
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .content > .content__nav > .nav__logo {
+        display: flex;
+        height: var(--nav-content-height);
+    }
+    .nav__logo--icon {
+        font-size: 3rem;
+        color: var(--text-color);
+        line-height: var(--nav-content-height);
+        /* background-color: var(--primary0); */
+    }
+    .nav__logo--name {
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 600;
+        margin-left: 1rem;
+        line-height: var(--nav-content-height);
+    }
+    .container__music--list {
+        padding-bottom: 7rem;
+    }
+    .navbar {
+        /* display: block; */
+        background-color: var(--primary-color2);
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        padding: 1rem 3rem;
+    }
+    .navbar__close--btn {
+        color: var(--text-color2);
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+    .navbar__item {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+    .navbar__item > a {
+        color: var(--text-color2);
+    }
+    .content__nav--mobile__logo , .content__nav--mobile {
+        display: flex;
+    }
+    .navbar__mobile--search {
+        /* display: block; */
+    }
+}
+
+/* Tablet */
+@media (min-width : 740px ) and (max-width : 1023px) {
+    .song {
+        width: 30.33333%;
+        margin: 0.5rem 1rem;
+    }
+    .content__container {
+        width: 146%;
+        padding: 0 2.5rem;
+        margin-left: 0;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width : 739px) {
+    .song {
+        width: 46%;
+        /* margin: 0.5rem 1rem; */
+    }
+    .content__container {
+        width: 240%;
+        padding: 0rem 0.5rem;
+        margin-left: 0;
+    }
+}

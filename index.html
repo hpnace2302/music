@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/grid.css">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reponsive.css">
 <!-- Please copy styles from <style></style> to your file styles -->
     <!-- reset css -->
     <style>
@@ -57,6 +58,18 @@
       </div>
       <div class="content">
         <div class="content__nav">
+          <div class="content__nav--mobile__logo">
+            <div class="nav__logo--icon"><i class="fab fa-spotify"></i></i></div>
+            <div class="nav__logo--name">Music</div>
+          </div>
+          <div class="content__nav--mobile">
+            <div class="content__nav--mobile__search">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="content__nav--mobile__bar">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
           <div class="content__nav--control">
             <i class="fas fa-arrow-circle-left"></i>
             <i class="fas fa-arrow-circle-right"></i>
@@ -70,12 +83,13 @@
             <a href="./register.html" class="content__nav--accout-register">Đăng Ký</a>
             <a href="./login.html" class="content__nav--accout-login">Đăng Nhập</a>
           </div>
+
         </div>
         <div class="music">
           <div class="content__container">
             <div class="container__heading">
               <div class="container__heading-left">Lựa chọn của bạn</div>
-              <div class="container__heading-right">Xem tất cả</div>
+              <div style="display: none" class="container__heading-right">Xem tất cả</div>
             </div>
             <div class="container__music">
               <div class="row no-gutters">
@@ -119,6 +133,7 @@
         
             <!-- Control -->
             <div class="control2">
+              <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
               <div class="control">
                 <div class="btn btn-repeat">
                   <i class="fas fa-redo"></i>
@@ -137,8 +152,6 @@
                   <i class="fas fa-random"></i>
                 </div>
               </div>
-          
-              <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
             </div>
         
             <audio id="audio" src=""></audio>
@@ -179,6 +192,35 @@
               </div>
             </div> -->
           <!-- </div> -->
+        </div>
+        <div class="navbar">
+          <div class="navbar__close--btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="navbar__list">
+            <li class="navbar__item"><a href="./login.html">Đăng Nhập</a></li>
+            <li class="navbar__item"><a href="./register.html">Đăng Ký</a></li>
+            <!-- <li class="navbar__item"></li>
+            <li class="navbar__item"></li>
+            <li class="navbar__item"></li>
+            <li class="navbar__item"></li>
+            <li class="navbar__item"></li> -->
+          </div>
+        </div>
+        <div class="navbar__mobile--search">
+          <div class="navbar__mobile--search__header">
+            <div class="navbar__mobile--search__header--btn">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <input type="text" placeholder='Tìm kiếm' class="navbar__mobile--search__header--input">
+            <div class="navbar__mobile--search__header--btn">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="navbar__mobile--search__content">
+            <div class="navbar__mobile--search__content--title">Tìm kếm</div>
+            <div class="navbar__mobile--search__content--desc">Tìm các bài hát , nghệ sĩ , album , podcast và playlist yêu thích của bạn.</div>
+          </div>
         </div>
       </div>
     </div>
