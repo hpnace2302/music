@@ -153,6 +153,7 @@
   color: var(--text-color);
   padding: 1rem 4rem;
   margin-right: 2rem;
+  transition: 0.4s ease;
 }
 .content__nav--accout-login {
   /* width: 50%; */
@@ -162,10 +163,12 @@
   border-radius: 4.5rem;
   padding: 1rem 4rem;
   background-color: var(--text-color);
+  transition: 0.4s ease;
+  
 }
 .content__nav--accout-register:hover,
 .content__nav--accout-login:hover {
-  animation: growth linear 0.2s; 
+  transform: scale(1.1);
 }
 .music {
   margin: var(--nav-content-height) 0 calc(var(--nav-footer-height) - 5px);
@@ -215,11 +218,24 @@
   margin: 1rem 0.68rem;
   padding: 1.6rem;
   border-radius: 0.5rem;
-  width: 19rem;
+  width: 20rem;
   height: 26.5rem;
   cursor: pointer;
+  transition: 0.4s ease;
   /* position: relative; */
 }
+.song:hover {
+  background-color: var(--primary-color5);
+  /* opacity: 0.8; */
+}
+/* @keyframes a{
+  from {
+    background-color: var(--primary-color4);
+  }
+  to {
+    background-color: var(--primary-color5);
+  }
+} */
 
 /* .song:hover {
     animation: FadeIn linear 0.3s;
@@ -233,17 +249,17 @@
 .container__music--detail {
 }
 .container__music--heading {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: var(--text-color);
   line-height: 1.8rem;
-  height: 1.8rem;
+  height: 3.4rem;
   margin: 1rem 0;
   overflow: hidden;
   display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
 }
 .singer {
   font-size: 1.4rem;
@@ -350,6 +366,10 @@ header h2 {
   padding: 18px;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.4s ease;
+}
+.control .btn:hover {
+  transform: scale(1.2);
 }
 .control .btn.active {
   color: var(--primary-color);

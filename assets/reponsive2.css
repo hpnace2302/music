@@ -179,5 +179,14 @@
         /* position: absolute;
         top: 1.5rem;
         left: 47rem; */
-      }
+    }
+    .dashboard > header {
+        width: 25rem;
+    }
+    .dashboard > header > h2 {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 85%;
+    }
 }
