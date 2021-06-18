@@ -20,31 +20,6 @@
         width: 100%;
         padding: 0;
     }
-    .player {
-        height: var(--nav-footer-mobile-height);
-        flex-wrap: wrap;
-    }
-    .music__detail {
-        /* width: 100%; */
-    }
-    .control1 {
-        margin-left: 0;
-    }
-    .control2 {
-        /* padding-bottom: 2rem; */
-    }
-    .control {
-        width: 100%;
-        margin-left: -1rem;
-    }
-    .progress {
-        width: 150%;
-        margin-left: -7rem;
-    }
-    .dashboard {
-        padding: 0;
-        padding-left: 1rem;
-    }
     .content > .content__nav > .nav__logo {
         display: flex;
         height: var(--nav-content-height);
@@ -105,6 +80,9 @@
     .music {
         padding-bottom: 0;
     }
+    .volume {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -119,6 +97,43 @@
         margin-left: 0;
         padding-bottom: 3rem;
     }
+    .player {
+        height: var(--nav-footer-mobile-height);
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .music__detail {
+        width: 100%;
+        margin-left: 15rem;
+    }
+    .control1 {
+        /* margin-left: 0; */
+    }
+    .control2 {
+        /* padding-bottom: 2rem; */
+        margin-left: 4rem;
+    }
+    .control {
+        width: 100%;
+        /* margin-left: 15rem; */
+        margin-left: 8rem;
+    }
+    .progress {
+        width: 150%;
+        /* margin-left: -7rem; */
+    }
+    .dashboard {
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .time p {
+        color: var(--text-color);
+        font-size: 14px;
+        margin: 0.2rem -18rem 0 -1rem;
+        /* position: absolute;
+        top: 1.5rem;
+        left: 47rem; */
+    }
 }
 
 /* Mobile */
@@ -132,4 +147,37 @@
         padding: 0rem 0.5rem;
         margin-left: 0;
     }
+    .player {
+        height: var(--nav-footer-mobile-height);
+        flex-wrap: wrap;
+    }
+    .music__detail {
+        /* width: 100%; */
+    }
+    .control1 {
+        margin-left: 0;
+    }
+    .control2 {
+        /* padding-bottom: 2rem; */
+    }
+    .control {
+        width: 100%;
+        margin-left: -1rem;
+    }
+    .progress {
+        width: 150%;
+        margin-left: -7rem;
+    }
+    .dashboard {
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .time p {
+        color: var(--text-color);
+        font-size: 14px;
+        margin: 0.2rem -5rem 0 -7rem;
+        /* position: absolute;
+        top: 1.5rem;
+        left: 47rem; */
+      }
 }

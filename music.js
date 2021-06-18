@@ -16,13 +16,34 @@ const prevBtn = $('.btn-prev')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.container__music--list')
-
+const playingTime = $('.playing-time')
+const durationTime = $('.duration-time')
+const volumeProgress = $('#volume-progress')
+const valueVolumeProgress = $('.volume-value')
+const muteBtn = $('.btn-volume-mute')
+const upVolumeBtn = $('.btn-volume-up')
+const downVolumeBtn = $('.btn-volume-down')
 
 const app = {
     currentIndex: 0,
+    currentTime: 0,
+    currentVolume: 1,
     isPlaying: false,
     isRandom: false,
     isRepeat: false,
+    isMuted: false,
+    volumeBeforeMuted: 0,
+    isOnMouseAndTouchOnProgress: false,
+    // currentIndex: 0,
+    // currentTime: 0,
+    // currentVolume: 1,
+    // isPlaying: false,
+    // isRandom: false,
+    // isRepeat: false,
+    // isMuted: false,
+    // isMobile: false,
+    // volumeBeforeMuted: 0,
+    // isOnMouseAndTouchOnProgress: false,
     config: JSON.parse(localStorage.getItem('PLAYER_STORAGE_KEY')) || {},
 
     songs: [
@@ -155,6 +176,19 @@ const app = {
         //     cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0
         //     cd.style.opacity = newCdWidth / cdWidth
         // }
+        // Phát / dừng nhạc khi nhấn `space`
+		document.onkeydown = function(e) {
+			if(e.code === "Space") {
+                e.preventDefault()
+				if (_this.isPlaying) {
+                    audio.pause()
+                    playBtn.title = "Play"
+                } else {  
+                    audio.play()
+                    playBtn.title = "Pause"
+                }
+			}
+		}
 
         // Xử lý khi click play
         playBtn.onclick = function() {
@@ -172,6 +206,54 @@ const app = {
             cdThumbAnimate.play()
         }
 
+         // Khi audio phát nhạc
+         audio.onplay = function() {
+            _this.isPlaying = true
+            player.classList.add('playing')
+            cdThumbAnimate.play()
+            $$(".music-waves.active span").forEach(span => {
+                span.classList.add('active')
+            })
+        }
+
+        // Khi auto được tải lên
+        audio.onloadedmetadata = function () {
+            const minSec = _this.formatTime(audio.duration)
+            durationTime.textContent = `${minSec[0]}:${minSec[1]}`
+		}
+
+        // Khi audio dừng phát nhạc
+        audio.onpause = function() {
+            _this.isPlaying = false
+            player.classList.remove('playing')
+            cdThumbAnimate.pause()
+            $$(".music-waves.active span.active").forEach(span => {
+                span.classList.remove('active')
+            })
+        }
+
+        // Khi tiến độ bài hát thay đổi
+        audio.ontimeupdate = function() {
+            if (audio.duration && !_this.isOnMouseAndTouchOnProgress) {
+                const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
+                progress.value = progressPercent
+                _this.setConfig("currentTime", audio.currentTime)
+
+                let tmp = _this.formatTime(audio.currentTime)
+                playingTime.textContent = `${tmp[0]}:${tmp[1]}`
+            }
+        }
+
+        // Chạm chuột
+        progress.onmousedown = function() {
+            _this.isOnMouseAndTouchOnProgress = true
+        }
+
+        // Chạm
+        progress.ontouchstart = function() {
+            _this.isOnMouseAndTouchOnProgress = true
+        }
+
         // Khi song bị pause
         audio.onpause = function() {
             _this.isPlaying = false
@@ -179,18 +261,19 @@ const app = {
             cdThumbAnimate.pause()
         }
 
-        // Khi tiến độ bài hát thay đổi
-        audio.ontimeupdate = function() {
-            if (audio.duration) {
-                const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
-                progress.value = progressPercent
-            }
-        }
+        // // Khi tiến độ bài hát thay đổi
+        // audio.ontimeupdate = function() {
+        //     if (audio.duration) {
+        //         const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
+        //         progress.value = progressPercent
+        //     }
+        // }
 
         // Xử lý khi tua song
         progress.onchange = function(e) {
             const seekTime = audio.duration / 100 * e.target.value
             audio.currentTime = seekTime
+            _this.isOnMouseAndTouchOnProgress = false
         }
 
         // Xủ lý khi next song
@@ -259,6 +342,28 @@ const app = {
                 }
             }
         }
+        // Xử lý khi thay đổi âm lượng
+        volumeProgress.oninput = function(e) {
+            audio.muted = false
+            audio.volume = e.target.value / 100
+            _this.currentVolume = audio.volume
+            valueVolumeProgress.textContent = Math.round(e.target.value)
+            _this.changeStyleVolume()
+            _this.setConfig('currentVolume', _this.currentVolume)
+        }
+
+        // Xử lý tắt / mở tiếng
+        upVolumeBtn.onclick = function() {
+            _this.muteOrUnmuteVolume()
+        }
+
+        downVolumeBtn.onclick = function() {
+            _this.muteOrUnmuteVolume()
+        }
+
+        muteBtn.onclick = function() {
+            _this.muteOrUnmuteVolume()
+        }
     },
     loadConfig: function() {
         this.isRandom = this.config.isRandom
@@ -299,11 +404,56 @@ const app = {
             $('.song.active').scrollIntoView(
                 {
                     behavior: 'smooth',
-                    block: 'nearest'
+                    block: 'end'
                 }
             )
         }, 300)
       $('.song.active')  
+    },
+    formatTime(time) {
+        const mins = Math.floor((time % 3600) / 60)
+		const secs = Math.floor(time % 60)
+        const minutes = mins < 10 ? `0${mins}` : mins
+        const seconds = secs < 10 ? `0${secs}` : secs
+		return [minutes, seconds]
+    },
+    // changeStyleVolume() {
+    //     if (this.currentVolume === 0) {
+    //         muteBtn.style.display = 'flex'
+    //         downVolumeBtn.style.display = 'none'
+    //         upVolumeBtn.style.display = 'none'
+    //     }
+    //     else if (this.currentVolume > 0 && this.currentVolume < 0.5) {
+    //         muteBtn.style.display = 'none'
+    //         downVolumeBtn.style.display = 'flex'
+    //         upVolumeBtn.style.display = 'none'
+    //     }
+    //     else {
+    //         muteBtn.style.display = 'none'
+    //         downVolumeBtn.style.display = 'none'
+    //         upVolumeBtn.style.display = 'flex'
+    //     }
+    // },
+    muteOrUnmuteVolume() {
+        this.isMuted = !this.isMuted
+        if (this.isMuted) {
+            this.volumeBeforeMuted = this.currentVolume
+            audio.muted = true
+            volumeProgress.value = 0
+            audio.volume = 0
+            this.currentVolume = 0
+        }
+        else {
+            audio.muted = false
+            this.currentVolume = this.volumeBeforeMuted
+            volumeProgress.value = this.currentVolume * 100
+            audio.volume = this.currentVolume
+        }
+        valueVolumeProgress.textContent = Math.round(this.currentVolume * 100)
+        this.setConfig('volumeBeforeMuted', this.volumeBeforeMuted)
+        this.setConfig('isMuted', this.isMuted)
+        this.setConfig('currentVolume', this.currentVolume)
+        this.changeStyleVolume()
     },
     start: function() {
         // Gán cấu hình từ config
