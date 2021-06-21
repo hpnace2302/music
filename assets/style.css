@@ -1,6 +1,6 @@
 .wrapper {
   width: calc(100% - var(--nav-width));
-  /* background-color: var(--primary-color3); */
+  background-color: var(--primary-color);
 }
 
 /* css nav */
@@ -171,8 +171,7 @@
   transform: scale(1.1);
 }
 .music {
-  margin: var(--nav-content-height) 0 calc(var(--nav-footer-height) - 5px);
-  margin-bottom: 0;
+  margin: var(--nav-content-height) 0 0;
   background-color: var(--primary-color3);
   width: 100%;
   padding-bottom: 9rem;
@@ -181,13 +180,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 3.4rem;
-  /* position: fixed;
-  top: var(--nav-content-height);
-  right: 0;
-  left: var(--nav-width);
-  bottom: 0; */
   background-color: var(--primary-color3);
-  /* height: 200rem; */
 }
 .container__heading {
   display: flex;
@@ -215,10 +208,10 @@
 }
 .song {
   background-color: var(--primary-color4);
-  margin: 1rem 0.68rem;
+  margin: 1rem 1rem;
   padding: 1.6rem;
   border-radius: 0.5rem;
-  width: 20rem;
+  width: 16.66666%;
   height: 26.5rem;
   cursor: pointer;
   transition: 0.4s ease;

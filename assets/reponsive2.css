@@ -1,5 +1,8 @@
 /* Mobile & Tablet */
 @media (max-width : 1023px) {
+    .wrapper {
+        width: 100%;
+    }
     .content__nav--control,
     .content__nav--accout,
     .nav {
@@ -39,7 +42,6 @@
     }
     .container__music--list {
         padding-bottom: 15rem;
-        overflow-x: hidden;
     }
     .navbar {
         /* display: block; */
@@ -92,7 +94,7 @@
         margin: 0.5rem 1rem;
     }
     .content__container {
-        width: 146%;
+        width: 100%;
         padding: 0 2.5rem;
         margin-left: 0;
         padding-bottom: 3rem;
@@ -140,19 +142,21 @@
 @media (max-width : 739px) {
     .song {
         width: 46%;
-        /* margin: 0.5rem 1rem; */
+        margin: 1rem 0.8rem;
     }
     .content__container {
-        width: 240%;
-        padding: 0rem 0.5rem;
+        width: 100%;
+        padding: 0rem;
         margin-left: 0;
+    }
+    .container__music--list {
+        max-width: 41.44rem;
     }
     .player {
         height: var(--nav-footer-mobile-height);
         flex-wrap: wrap;
     }
     .music__detail {
-        /* width: 100%; */
     }
     .control1 {
         margin-left: 0;
