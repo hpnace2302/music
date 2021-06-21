@@ -48,80 +48,100 @@ const app = {
 
     songs: [
         {
-        name: "Khó Vẽ Nụ Cười",
-        singer: "ĐạtG x Du Uyên",
-        path: "./assets/img/songs/song1.mp3",
-        image: "./assets/img/songimage/song1.jpg"
+            name: "Khó Vẽ Nụ Cười",
+            singer: "ĐạtG x Du Uyên",
+            path: "./assets/img/songs/song1.mp3",
+            image: "./assets/img/songimage/song1.jpg"
         },
         {
-        name: "Câu Hẹn Câu Thề",
-        singer: "Đình Dũng",
-        path: "./assets/img/songs/song2.mp3",
-        image: "./assets/img/songimage/song2.jpg"
+            name: "Câu Hẹn Câu Thề",
+            singer: "Đình Dũng",
+            path: "./assets/img/songs/song2.mp3",
+            image: "./assets/img/songimage/song2.jpg"
         },
         {
-        name: "Sài Gòn Đau Lòng Quá",
-        singer: "Hứa KIm Tuyền",
-        path: "./assets/img/songs/song3.mp3",
-        image: "./assets/img/songimage/song3.jpg"
+            name: "Sài Gòn Đau Lòng Quá",
+            singer: "Hứa KIm Tuyền",
+            path: "./assets/img/songs/song3.mp3",
+            image: "./assets/img/songimage/song3.jpg"
         },
         {
-        name: "Tình Bạn Diệu Kỳ",
-        singer: "Amee x Karik x Ricky Star",
-        path: "./assets/img/songs/song4.mp3",
-        image: "./assets/img/songimage/song4.jpg"
+            name: "Tình Bạn Diệu Kỳ",
+            singer: "Amee x Karik x Ricky Star",
+            path: "./assets/img/songs/song4.mp3",
+            image: "./assets/img/songimage/song4.jpg"
         },
         {
-        name: "Chỉ Là Không Cùng Nhau",
-        singer: "Tăng Phúc",
-        path: "./assets/img/songs/song5.mp3",
-        image: "./assets/img/songimage/song5.jpg"
+            name: "Chỉ Là Không Cùng Nhau",
+            singer: "Tăng Phúc",
+            path: "./assets/img/songs/song5.mp3",
+            image: "./assets/img/songimage/song5.jpg"
         },
         {
-        name: "Laylalay",
-        singer: "Jack",
-        path: "./assets/img/songs/song6.mp3",
-        image: "./assets/img/songimage/song6.jpg"
+            name: "Laylalay",
+            singer: "Jack",
+            path: "./assets/img/songs/song6.mp3",
+            image: "./assets/img/songimage/song6.jpg"
         },
         {
-        name: "Nàng Thơ",
-        singer: "Hoàng Dũng",
-        path: "./assets/img/songs/song7.mp3",
-        image: "./assets/img/songimage/song7.jpg"
+            name: "Nàng Thơ",
+            singer: "Hoàng Dũng",
+            path: "./assets/img/songs/song7.mp3",
+            image: "./assets/img/songimage/song7.jpg"
         },
         {
-        name: "Phải Chăng Em Đã Yêu",
-        singer: "JukySan x RedT",
-        path: "./assets/img/songs/song8.mp3",
-        image: "./assets/img/songimage/song8.jpg"
+            name: "Phải Chăng Em Đã Yêu",
+            singer: "JukySan x RedT",
+            path: "./assets/img/songs/song8.mp3",
+            image: "./assets/img/songimage/song8.jpg"
         },
         {
-        name: "Kẻ Cắp Gặp Bà Già",
-        singer: "Hoàng Thuỳ Linh",
-        path: "./assets/img/songs/song9.mp3",
-        image:
-            "./assets/img/songimage/song9.jpg"
+            name: "Kẻ Cắp Gặp Bà Già",
+            singer: "Hoàng Thuỳ Linh",
+            path: "./assets/img/songs/song9.mp3",
+            image: "./assets/img/songimage/song9.jpg"
         },
         {
-        name: "Trên Tình Bạn Dưới Tình Yêu",
-        singer: "MIN",
-        path: "./assets/img/songs/song10.mp3",
-        image:
-            "./assets/img/songimage/song10.jpg"
+            name: "Trên Tình Bạn Dưới Tình Yêu",
+            singer: "MIN",
+            path: "./assets/img/songs/song10.mp3",
+            image: "./assets/img/songimage/song10.jpg"
         },
         {
             name: "Chúng Ta Của Hiện Tại",
             singer: "Sơn Tùng MTP",
             path: "./assets/img/songs/song11.mp3",
-            image:
-                "./assets/img/songimage/song11.jpg"
+            image: "./assets/img/songimage/song11.jpg"
         },
         {
             name: "Muộn Rồi Mà Sao Còn",
             singer: "Sơn Tùng MTP",
             path: "./assets/img/songs/song12.mp3",
-            image:
-                "./assets/img/songimage/song12.jpg"
+            image: "./assets/img/songimage/song12.jpg"
+        },
+        {
+            name: "Chỉ Là Muốn Nói",
+            singer: "Khải",
+            path: "./assets/img/songs/song14.mp3",
+            image: "https://data.chiasenhac.com/data/cover/138/137964.jpg"
+        },
+        {
+            name: "Không Thể Là Một Ai Khác",
+            singer: "Trịnh Đình Quang",
+            path: "./assets/img/songs/song13.mp3",
+            image: "https://i1.sndcdn.com/artworks-y2qkEYzwaBxO-0-t500x500.jpg"
+        },
+        {
+            name: "Thiên Đường Vắng Em",
+            singer: "Trịnh Đình Quang",
+            path: "./assets/img/songs/song15.mp3",
+            image: "https://data.chiasenhac.com/data/cover/122/121995.jpg"
+        },
+        {
+            name: "Sắp 30",
+            singer: "Trịnh Đình Quang",
+            path: "./assets/img/songs/song16.mp3",
+            image: "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/d/9/e/9/d9e901750b0205d7fd0cbc8bd87aea85.jpg"
         },
     ],
     setConfig: function(key, value) {
