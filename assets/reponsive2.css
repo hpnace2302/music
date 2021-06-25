@@ -195,4 +195,7 @@
         text-overflow: ellipsis;
         width: 85%;
     }
+    .gender {
+      display: block;
+    }
 }
