@@ -15,9 +15,9 @@
       integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/login.css">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/reponsive2.css">
-    <link rel="stylesheet" href="./assets/login.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome-all.min.css">
 <!-- Please copy styles from <style></style> to your file styles -->
     <!-- reset css -->
@@ -31,85 +31,87 @@
     </style>
   </head>
   <body>
-    <div class="logo">
-      <div class="logo--icon"><i class="fab fa-spotify"></i></i></div>
-      <div class="logo--name">Music</div>
-    </div>
-    <div class="container">
-          <div class="login__social">
-              <div class="login__social--heading">Để tiếp tục, hãy đăng nhập vào Music</div>
-              <ul class="login__list">
-                  <li class="login__item">
-                      <a href="#" class="login__item--link">
-                          <div class="login__item-icon">
-                              <i class="fab fa-facebook"></i>
-                          </div>
-                          <div class="login__item--name ">
-                              Tiếp tục với FaceBook
-                          </div>
-                      </a>
-                  </li>
-                  <li class="login__item">
-                      <a href="#" class="login__item--link">
-                          <div class="login__item-icon">
-                              <i class="fab fa-apple"></i>
-                          </div>
-                          <div class="login__item--name">
-                              Tiếp tục với Apple
-                          </div>
-                      </a>
-                  </li>
-                  <li class="login__item">
-                      <a href="#" class="login__item--link">
-                          <div class="login__item-icon">
-                              <i class="fab fa-google"></i>
-                          </div>
-                          <div class="login__item--name">
-                              Tiếp tục với Google
-                          </div>
-                      </a>
-                  </li>
-                  <li class="login__item">
-                      <a href="#" class="login__item--link">
-                          <div class="login__item--name">
-                              Tiếp tục với số điện thoại
-                          </div>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-          <div class="or">
-              <strong class="or__title">hoặc</strong>
-          </div>
-          <div class="login__input" id="form-2">
-              <div class="register__input--item">
-                  <div for="email" class="register__heading">Email của bạn là gì?</div>
-                  <input id="email" name="email" type="text" class="input__format" placeholder="Nhập email của bạn.">
-                  <span class="form-message"></span>
-                  <!-- <a href="" class="register__numberphone">Dùng số điện thoại.</a> -->
+      <div class="box">
+        <div class="logo">
+          <div class="logo--icon"><i class="fab fa-spotify"></i></i></div>
+          <div class="logo--name">Music</div>
+        </div>
+        <div class="container">
+              <div class="login__social">
+                  <div class="login__social--heading">Để tiếp tục, hãy đăng nhập vào Music</div>
+                  <ul class="login__list">
+                      <li class="login__item">
+                          <a href="#" class="login__item--link">
+                              <div class="login__item-icon">
+                                  <i class="fab fa-facebook"></i>
+                              </div>
+                              <div class="login__item--name ">
+                                  Tiếp tục với FaceBook
+                              </div>
+                          </a>
+                      </li>
+                      <li class="login__item">
+                          <a href="#" class="login__item--link">
+                              <div class="login__item-icon">
+                                  <i class="fab fa-apple"></i>
+                              </div>
+                              <div class="login__item--name">
+                                  Tiếp tục với Apple
+                              </div>
+                          </a>
+                      </li>
+                      <li class="login__item">
+                          <a href="#" class="login__item--link">
+                              <div class="login__item-icon">
+                                  <i class="fab fa-google"></i>
+                              </div>
+                              <div class="login__item--name">
+                                  Tiếp tục với Google
+                              </div>
+                          </a>
+                      </li>
+                      <li class="login__item">
+                          <a href="#" class="login__item--link">
+                              <div class="login__item--name">
+                                  Tiếp tục với số điện thoại
+                              </div>
+                          </a>
+                      </li>
+                  </ul>
               </div>
-              <div class="register__input--item">
-                  <div for="password_confirmation" class="register__heading">Nhập mật khẩu của bạn</div>
-                  <input id="password_confirmation" name="password_confirmation" type="password" class="input__format" placeholder="Tạo mật khẩu.">
-                  <span class="form-message"></span>
+              <div class="or">
+                  <strong class="or__title">hoặc</strong>
               </div>
-              <!-- <div class="login__heading">Địa chỉ email hoặc tên người dùng</div>
-              <input type="text" class="input__format login__input--user" placeholder="Địa chỉ email hoặc tên người dùng">
-              <div class="login__heading">Mật khẩu</div>
-              <input type="password" class="input__format login__input--pw" placeholder="Mật khẩu"> -->
-              <a href="" class="login__forgot--pw">Quên mật khẩu của bạn</a>
-              <div class="login__confirm">
-                  <div class="login__confirm--checkbox">
-                      <input type="checkbox" class="login__checked">Hãy nhớ tôi
+              <div class="login__input" id="form-2">
+                  <div class="register__input--item">
+                      <div for="email" class="register__heading">Email của bạn là gì?</div>
+                      <input id="email" name="email" type="text" class="input__format" placeholder="Nhập email của bạn.">
+                      <span class="form-message"></span>
+                      <!-- <a href="" class="register__numberphone">Dùng số điện thoại.</a> -->
                   </div>
-                  <div class="login__confirm--login">Đăng Nhập</div>
+                  <div class="register__input--item">
+                      <div for="password_confirmation" class="register__heading">Nhập mật khẩu của bạn</div>
+                      <input id="password_confirmation" name="password_confirmation" type="password" class="input__format" placeholder="Tạo mật khẩu.">
+                      <span class="form-message"></span>
+                  </div>
+                  <!-- <div class="login__heading">Địa chỉ email hoặc tên người dùng</div>
+                  <input type="text" class="input__format login__input--user" placeholder="Địa chỉ email hoặc tên người dùng">
+                  <div class="login__heading">Mật khẩu</div>
+                  <input type="password" class="input__format login__input--pw" placeholder="Mật khẩu"> -->
+                  <a href="" class="login__forgot--pw">Quên mật khẩu của bạn</a>
+                  <div class="login__confirm">
+                      <div class="login__confirm--checkbox">
+                          <input type="checkbox" class="login__checked">Hãy nhớ tôi
+                      </div>
+                      <div class="login__confirm--login">Đăng Nhập</div>
+                  </div>
               </div>
-          </div>
-          <div class="login__footer">
-              <div class="login__footer--title">Bạn chưa có tài khoản?</div>
-              <a href='./register.html' class="login__footer--register">Đăng ký</a>
-          </div>
-    </div>
+              <div class="login__footer">
+                  <div class="login__footer--title">Bạn chưa có tài khoản?</div>
+                  <a href='./register.html' class="login__footer--register">Đăng ký</a>
+              </div>
+        </div>
+      </div>
 
       <script src='./login-register.js'></script>
       <script>

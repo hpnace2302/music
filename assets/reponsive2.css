@@ -1,9 +1,8 @@
 /* Mobile & Tablet */
 @media (max-width : 1023px) {
-    .logo,
-    .container,
-    .container2 {
+    .box {
       padding: 0 2rem;
+      width: 100%;
     }
     .wrapper {
         width: 100%;
@@ -16,8 +15,6 @@
     .content {
         margin-left: 0;
         width: 100%;
-        /* position: fixed; */
-        /* margin: 0 auto; */
     }
     .music {
         /* position: fixed; */

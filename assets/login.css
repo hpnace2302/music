@@ -1,8 +1,11 @@
 /* @import './base.css'; */
+.box {
+  width: 45rem;
+  margin: 0 auto;
+}
 .container {
     width: 100%;
     margin: 0 auto;
-    /* background-color: rgb(211, 40, 40); */
 }
 .logo {
     display: flex;
