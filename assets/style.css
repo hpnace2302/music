@@ -1,3 +1,6 @@
+html {
+  background-color: var(--primary-color);
+}
 .wrapper {
   width: calc(100% - var(--nav-width));
   background-color: var(--primary-color);

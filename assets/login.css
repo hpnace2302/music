@@ -1,6 +1,6 @@
 /* @import './base.css'; */
 .container {
-    width: 45rem;
+    width: 100%;
     margin: 0 auto;
     /* background-color: rgb(211, 40, 40); */
 }

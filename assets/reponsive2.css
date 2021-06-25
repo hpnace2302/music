@@ -1,5 +1,10 @@
 /* Mobile & Tablet */
 @media (max-width : 1023px) {
+    .logo,
+    .container,
+    .container2 {
+      padding: 0 2rem;
+    }
     .wrapper {
         width: 100%;
     }
